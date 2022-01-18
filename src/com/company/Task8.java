@@ -1,9 +1,8 @@
 package com.company;
-
-import java.util.Random;
 import java.util.Scanner;
 
-public class Main {
+
+public class Task8 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());
@@ -14,7 +13,4 @@ public class Main {
         }
         System.out.println(m);
     }
-    }
-
-
-
+}
