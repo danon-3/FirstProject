@@ -1,0 +1,27 @@
+input A
+input B
+input C
+
+if A > B then
+    if B > C then
+        output C + " " + B + " " + A
+    end if
+    if B < C then
+        if A > C then
+            output B + " " + C + " " + A
+        else
+            output B + " " + A + " " + C
+        end if
+    end if
+else
+    if A > C then
+        output C + " " + A + " " + B
+    end if
+    if A < C then
+        if B > C then
+            output A + " " + C + " " + B
+        else
+            output A + " " + B + " " + C
+        end if
+    end if
+end if
