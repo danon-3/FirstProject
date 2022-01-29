@@ -1,0 +1,15 @@
+myCard = new card()
+
+comeToCashpoint()
+
+output myCard
+
+output myCard.pin
+
+output "withdraw cash"
+
+input money
+
+takeTheMoney()
+
+leave()
