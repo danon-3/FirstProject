@@ -1,9 +1,8 @@
 package com.company;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main {
+public class HW_31_01 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int N = Integer.valueOf(scan.nextLine());
@@ -27,8 +26,4 @@ public class Main {
                 K = K - 1;
             System.out.println(K);
         }
-    }
-    }
-
-
-
+}}
