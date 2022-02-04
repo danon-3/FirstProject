@@ -1,8 +1,9 @@
 package com.company;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Scanner;
 
-public class Main {
+public class HW_04_02 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String[] arr0 = scan.nextLine().split(" ");
@@ -17,7 +18,7 @@ public class Main {
                 a = arr[i+2];
                 arr[i+2] = arr[i];
                 arr[i] = a;
-        }}
+            }}
         a = arr[arr.length-2];
         arr[arr.length-2] = arr[0];
         arr[0] = a;
@@ -28,10 +29,5 @@ public class Main {
 
         System.out.println(Arrays.toString(arr));
 
-        }
-
-        }
-
-
-
-
+    }
+}
