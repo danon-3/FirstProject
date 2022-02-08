@@ -13,10 +13,10 @@ public class Main {
         String[] result = new String[arr0.length];
 
         for (int i=0; i< arr0.length; i++){
-            if (i+D < arr0.length-1)
-                result[i] = arr0[i + D + 1];
+            if (i+D < arr0.length)
+                result[i] = arr0[i + D];
             else
-                result[i] = arr0[i + D - arr0.length + 1];
+                result[i] = arr0[i + D - arr0.length];
         }
 
         System.out.println(Arrays.toString(result));
