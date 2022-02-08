@@ -1,8 +1,9 @@
 package com.company;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Scanner;
 
-public class Main {
+public class Task3_8Feb {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String[] par = scan.nextLine().split(" ");
@@ -24,7 +25,3 @@ public class Main {
 
     }
 }
-
-
-
-
