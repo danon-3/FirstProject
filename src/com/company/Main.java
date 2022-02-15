@@ -4,22 +4,38 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        String[] par = scan.nextLine().split(" ");
-        int N = Integer.valueOf(par[0]);
-        int D = Integer.valueOf(par[1]);
+        Scanner scanner = new Scanner(System.in);
+        String[] arr1 = scanner.nextLine().split(" ");
+        int[] given = new int[arr1.length];
+        boolean decreasing = true;
+        boolean increasing = true;
 
-        String[] arr0 = scan.nextLine().split(" ");
-        String[] result = new String[arr0.length];
+        for (int i = 0; i < arr1.length; i++)
+            given[i] = Integer.valueOf(arr1[i]);
 
-        for (int i=0; i< arr0.length; i++){
-            if (i+D < arr0.length)
-                result[i] = arr0[i + D];
-            else
-                result[i] = arr0[i + D - arr0.length];
+
+        for (int i = 0; i < given.length - 1; i++) {
+            if (given[i] < given[i + 1]) {
+                decreasing = false;
+                break;
+            }
         }
 
-        System.out.println(Arrays.toString(result));
+        for (int i = 0; i < given.length - 1; i++) {
+            if (given[i] > given[i + 1]) {
+                increasing = false;
+                break;
+            }
+        }
+
+        if (increasing && decreasing)
+            System.out.println("All elements of the array are equal");
+        else if (!increasing && decreasing)
+            System.out.println("Array is sorted in decreasing order");
+        else if (increasing && !decreasing)
+            System.out.println("Array is sorted in increasing order");
+        else if (!increasing && !decreasing)
+            System.out.println("Array is not sorted");
 
 
     }

@@ -10,19 +10,19 @@ public class Arrays_15Feb {
         boolean decreasing = true;
         boolean increasing = true;
 
-        for (int i=0; i < arr1.length; i++)
+        for (int i = 0; i < arr1.length; i++)
             given[i] = Integer.valueOf(arr1[i]);
 
 
-        for (int i=0; i < given.length; i++){
-            if (given[i]<given[i+1]){
+        for (int i = 0; i < given.length - 1; i++) {
+            if (given[i] < given[i + 1]) {
                 decreasing = false;
                 break;
             }
         }
 
-        for (int i=0; i < given.length; i++){
-            if (given[i]>given[i+1]){
+        for (int i = 0; i < given.length - 1; i++) {
+            if (given[i] > given[i + 1]) {
                 increasing = false;
                 break;
             }
@@ -39,4 +39,6 @@ public class Arrays_15Feb {
 
 
     }
+
+
 }
