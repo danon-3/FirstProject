@@ -1,0 +1,19 @@
+ARR = [545, 32, 45, 89, 12, 46]
+
+loop I from 0 to (ARR.length - 1)
+    LEAST = I
+
+    loop J from (LEAST+1) to (ARR.length - 1)
+        if ARR[J] < ARR[LEAST] then
+            LEAST = J
+        end if
+    end loop
+
+    TEMP = ARR[LEAST]
+    ARR[LEAST] = ARR[I]
+    ARR[I] = TEMP
+end loop
+
+loop I from 0 to ARR.length - 1
+    output ARR[I]
+end loop

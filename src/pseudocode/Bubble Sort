@@ -1,0 +1,15 @@
+ARR = [545, 32, 45, 89, 12, 46]
+
+loop I from 0 to (ARR.length - 2)
+    loop J from 0 to (ARR.length - 2)
+        if ARR[J] > ARR[J+1] then
+            TEMP = ARR[J]
+            ARR[J] = ARR[J+1]
+            ARR[J+1] = TEMP
+        end if
+     end loop
+end loop
+
+loop I from 0 to ARR.length - 1
+    output ARR[I]
+end loop
