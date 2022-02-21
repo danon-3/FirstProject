@@ -1,8 +1,8 @@
 package com.company;
 
-import java.util.*;
+import java.util.Scanner;
 
-public class Main {
+public class Feb22_HW {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String[] arr1 = scanner.nextLine().split(" ");
@@ -18,7 +18,3 @@ public class Main {
 
     }
 }
-
-
-
-
