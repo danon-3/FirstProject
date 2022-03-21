@@ -1,0 +1,26 @@
+// 7
+A = 5
+B = 10
+
+if (A < B) AND (A mod 5 = 0) then
+    output A
+end if
+
+
+//8
+A = 1
+loop while A <= 10
+    if (A mod 2 = 0) then
+        output A
+    end if
+    A = A + 1
+end loop
+
+//9
+X = 0
+SUM = 0
+loop while X <= array.length
+    SUM = SUM + ARRAY[X]
+    X = X + 1
+end loop
+AVG = SUM div ARRAY.length
